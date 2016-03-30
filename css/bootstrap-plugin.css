@@ -1,0 +1,366 @@
+/* form & a*/
+
+a {
+  color: #0091ff;
+}
+
+a:hover {
+  color: #3BB4FF;
+}
+.form-group {
+    text-align: left;
+}
+
+.form-control-static {
+    line-height: 1.42857143;
+    min-height: 20px\9;
+}
+
+.text-warning {
+  color: #F60;
+}
+
+.text-muted {
+  color: #999;
+}
+
+.text-danger {
+  color: #F66;
+}
+
+.text-grey {
+  color: #666;
+}
+
+/* 按钮 */
+.btn-xg {
+  width: 295px;
+  padding: 19px 16px;
+  border-radius: 6px;
+  font-size: 30px;
+}
+
+.btn-lg {
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.btn-sm {
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.btn-xs {
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.btn-primary {
+  background-color: #0090ff;
+  border-color: #0090ff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #3bb4ff;
+  border-color: #3bb4ff;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #0083d3;
+  border-color: #0083d3;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled,
+.btn-primary[disabled] {
+  background-color: #265a88;
+}
+
+.btn-success {
+  background-color: #3cb03c;
+  border-color: #3cb03c;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #49c449;
+  border-color: #49c449;
+}
+
+.btn-success:active,
+.btn-success.active {
+  background-color: #2e992e;
+  border-color: #2e992e;
+}
+
+.btn-success.disabled,
+.btn-success:disabled,
+.btn-success[disabled] {
+  background-color: #265a88;
+}
+
+.btn.btn-reverse, .btn.btn-reverse:focus{
+  background: #fff;
+}
+.btn.btn-reverse:hover{
+  color: #fff;
+}
+.btn.btn-reverse.disabled,
+.btn.btn-reverse[disabled]{
+  background: #dfdfdf;
+  color: #fff;
+  border-color: #ccc;
+}
+
+.btn-primary.btn-reverse{
+  color: #0090ff;
+}
+
+.btn-primary.btn-reverse:hover{
+  color:#fff;
+  background: #0090ff;
+}
+
+.btn-primary.btn-reverse:active{
+  background: #0083d3;
+  color: #fff;
+}
+/*.btn-primary.btn-reverse:focus{
+  background: #fff;
+  color: #0090ff;
+}*/
+
+.btn-success.btn-reverse{
+  color: #3cb03c;
+}
+.btn-success.btn-reverse:active{
+  background: #2e992e;
+  color: #2e992e;
+}
+.btn-success.btn-reverse:focus{
+  background: #fff;
+  color: #3cb03c;
+}
+
+.btn-default.btn-linear{
+  color: #333;
+  border: 1px solid #b3bbc0;
+  background: linear-gradient(180deg, #fdfdfd 10%, #dbdde7);
+}
+
+/* 导航条 */
+.module-nav {
+  margin-bottom: -1px;
+}
+
+.module-nav.navbar-default {
+  border: none;
+}
+
+.module-nav li {
+  min-width: 150px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.module-nav .navbar-nav>li>a {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.module-nav .navbar-nav>.active {
+  border-bottom: 3px solid #4cb1ff;
+}
+
+.module-nav .navbar-nav>.active>a,
+.module-nav .navbar-nav>.active>a:focus,
+.module-nav .navbar-nav>.active>a:hover {
+  color: #4cb1ff;
+  padding-bottom: 17px;
+  background-color: #222;
+}
+
+/*新向导*/
+.steps-container {
+	margin-bottom: 15px;
+}
+
+.steps {
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.steps > .step {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.steps > .step > .progress {
+	position: relative;
+	left: -50%;
+	border-radius: 0px;
+	height: 3px;
+	box-shadow: none;
+	margin: 26px 0;
+	background: #CCC;
+}
+
+.steps > .step:first-child > .progress {
+	width: 0;
+}
+
+.steps > .step > .progress > .progress-bar {
+	width: 0;
+	background: #F90;
+	box-shadow: none;
+}
+
+.steps > .step > .step-dot {
+	position: absolute;
+	display: block;
+	top: 10px;
+	left: 50%;
+	width: 34px;
+	height: 34px;
+	margin-left: -15px;
+	background: url(images/step/sprite.png) no-repeat -80px -56px;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 34px;
+	text-align: center;
+	z-index: 100;
+}
+
+
+.steps > .step > .step-info {
+	font-size: 14px;
+	color: #999;
+	text-align: center;
+}
+
+.steps > .step.current > .progress > .progress-bar,
+.steps > .step.complete > .progress > .progress-bar {
+	width: 100%;
+}
+
+.steps > .step.current > .step-dot {
+	background-position: -40px -56px;
+}
+
+.steps > .step.complete > .step-dot {
+	background-position: 0 -56px;
+}
+
+.steps > .step.complete > .step-dot > span {
+	display: none;
+}
+.steps > .step.current > .step-info,
+.steps > .step.complete > .step-info {
+	color: #F90;
+}
+
+/* breadcrumb */
+.breadcrumb {
+    background-color: inherit;
+    margin-bottom: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.breadcrumb > li {
+    font-size: 16px;
+}
+
+.breadcrumb > li > a {
+    color: #000;
+}
+
+.breadcrumb > .active {
+    color: #999;
+}
+
+.breadcrumb > li + li:before {
+    content: ">\00a0";
+    color: #000;
+}
+
+.btn-group.open .dropdown-toggle{
+  -webkit-box-shadow : none;
+  box-shadow: none;
+}
+.dropdown-toggle-extra{
+  height: 35px;
+  font-size:12px;
+  color:#333;
+  text-align: left;
+  border:1px solid #cbd3da;
+  border-radius: 0;
+  padding: 1px 12px;
+  background: #fff;
+}
+.vm-image .dropdown-toggle-extra:focus{
+  border-color:#3399ff;
+}
+.vm-image .dropdown-menu-extra {
+  border-top:none;
+  margin-top:0;
+}
+.dropdown-menu-extra{
+  min-width: 135px;
+  border:1px solid #cbd3da;
+  border-radius: 0;
+  padding: 0;
+  margin-top:-1px;
+}
+
+.dropdown-menu-extra > li > a {
+  font-size: 12px;
+  color:#333;
+  line-height:31px;
+  border-top:1px solid #e3e6e9;
+  padding:0 12px;
+}
+.dropdown-menu-extra > li:first-child > a{
+  border-top:0;
+}
+
+.dropdown-menu-extra > li > a:hover{
+  color:#fff;
+  background: #0090ff;  
+}
+
+.pagination{
+  margin-top:0;
+}
+.pagination>li>a, .pagination>li>span{
+  font-size: 12px;
+  color:#0090ff;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, 
+.pagination>.active>a:hover, .pagination>.active>span, 
+.pagination>.active>span:focus, .pagination>.active>span:hover{
+  border-color:#4cb2ff;
+  background-color: #4cb2ff;
+}
+
+.pagination>.disabled>a, .pagination>.disabled>a:focus, 
+.pagination>.disabled>a:hover, .pagination>.disabled>span, 
+.pagination>.disabled>span:focus, .pagination>.disabled>span:hover{
+  color:#999;
+}
+
+.pagination .total a{
+  color:#333!important;
+  cursor:default;
+}
+.pagination .total a:hover{
+  background-color: #fff;
+}

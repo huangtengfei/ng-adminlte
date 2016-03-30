@@ -1,0 +1,56 @@
+
+.accountTable{
+  width: 40%;
+  margin-left: 50px;
+}
+#accountTitle{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+#accountTitle .accountLine{
+  border-bottom: none;
+}
+#accountTable .backColorddd{
+  background-color: #ddd;
+}
+.detail-groups.left50{
+  margin-left: 50px;
+}
+#detailTable{
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#detailTable .backColorddd{
+  background-color: #ddd;
+}
+#orderDetail .table .backColorddd{
+  background-color: #ddd;
+}
+.table .floatl{
+  float: left;
+}
+.left20{
+  margin-left: 20px;
+}
+.left35{
+  margin-left: 35px; 
+}
+.width350{
+  width:350px;
+}
+.accountLink{
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.rechargeTable{
+  width: 66%;
+}
+.tip p{
+  color: #bbb;
+}
+.pwdTip{
+  width: 75%;
+  margin-left: 80px;
+}

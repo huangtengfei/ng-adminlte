@@ -1,0 +1,132 @@
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: "Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+}
+.content-wrapper {
+  background-color: #ecf0f5;
+}
+
+
+ul.toolbar {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+ul.toolbar>li {
+    float: left;
+    display: list-item;
+    list-style: none;
+    margin: 0 5px 10px 0;
+}
+
+.btn-detail-modify {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 12px;
+}
+
+.break-word {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.detail-name {
+  display: inline-block;
+  position: relative;
+  width:78%;
+  vertical-align: middle;
+}
+
+.detail-n-txt {
+  position: absolute;
+  top: -16px;
+  left: 10px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.detail-n-txt.text-overflow:hover {
+  background: #fff;
+  z-index: 1;
+  white-space: normal;
+  text-overflow: inherit;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.panelBorder{
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+}
+.top20{
+  margin-top: 20px;
+}
+.width50{
+  width:50px;
+}
+.width100{
+  width: 100px;
+}
+.width210{
+  width: 210px;
+}
+.inlineDisplay{
+  display: inline-block;
+  vertical-align: middle;
+}
+.detail-groups .keywidth{
+  width:200%;
+}
+.panel .panel-body .detail-groups .publicKey{
+  word-wrap: break-word;
+  word-break: break-all;
+  padding-left: 60px;
+  display: block;
+  margin-top: -34px;
+}
+.textcenter{
+  text-align: center;
+  margin-left: -70px;
+}
+.left5{
+  margin-left: 5px;
+}
+.left80{
+  margin-left: 80px;
+}
+.colorbbb{
+  color: #bbb;
+}
+.widthp65{
+  width: 65%
+}
+.vmDetailLink{
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.paddingleft{
+  padding-left: 10px;
+}
+.mih620 {
+  min-height: 620px;
+}
+.table .scrolly{
+  overflow-y: auto;
+  height: 500px;
+}
+.loadleft{
+  margin-left: 150px;
+}
+.vmScroll{
+  height: 200px;
+  overflow-y: auto;
+}
+.vmScroll .pleft{
+  padding-left: 20px;
+}
