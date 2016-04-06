@@ -1,0 +1,32 @@
+<div class="modal fade in" ng-controller="DialogCtrl as vm">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" ng-click="vm.close()"><span
+                        aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">弹出框示例</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" name="myForm">
+
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">desc</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="desc" ng-model="vm.formData.desc">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" ng-click="vm.ok()">
+                    确定
+                </button>
+                <button type="button" class="btn btn-primary btn-reverse" ng-click="vm.cancel()">
+                    取消
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

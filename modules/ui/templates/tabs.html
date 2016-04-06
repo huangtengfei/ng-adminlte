@@ -1,0 +1,19 @@
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                    <li ng-repeat="tab in vm.formData.tabs"
+                        ng-class="{true: 'active'}[tab==vm.formData.selectedTab]"
+                        ng-click="vm.formData.selectedTab=tab">
+                        <a ui-sref="{{tab.state}}">{{tab.name}}</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div ui-view></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

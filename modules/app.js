@@ -2,7 +2,7 @@ var app = angular.module('demo', ['ui.router', 'ngMessages', 'demo.controls']);
 
 app.value('baseUrl', '/api/v1');
 
-app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/console');
 
@@ -38,7 +38,47 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             controllerAs: 'vm'
         })
 
+        .state('Tabs', {
+            parent: 'Console',
+            url: '/tabs',
+            templateUrl: 'modules/ui/templates/tabs.html',
+            controller: 'TabsCtrl',
+            controllerAs: 'vm'
+        })
+        .state('Unchecked', {
+            parent: 'Tabs',
+            url: '/unchecked',
+            templateUrl: 'modules/ui/templates/tab-unchecked.html'
+        })
+        .state('Checked', {
+            parent: 'Tabs',
+            url: '/checked',
+            templateUrl: 'modules/ui/templates/tab-checked.html'
+        })
 
+        .state('Modals', {
+            parent: 'Console',
+            url: '/modals',
+            templateUrl: 'modules/ui/templates/modals.html',
+            controller: 'ModalsCtrl',
+            controllerAs: 'vm'
+        })
+
+        .state('TimeLine', {
+            parent: 'Console',
+            url: '/timeline',
+            templateUrl: 'modules/ui/templates/timeline.html',
+            controller: 'TimeLineCtrl',
+            controllerAs: 'vm'
+        })
+
+        .state('General', {
+            parent: 'Console',
+            url: '/general',
+            templateUrl: 'modules/ui/templates/general.html',
+            controller: 'GeneralCtrl',
+            controllerAs: 'vm'
+        })
 
 
 }])

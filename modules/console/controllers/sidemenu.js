@@ -10,9 +10,10 @@ angular.module('demo').controller('SideMenuCtrl', ["$rootScope", "$state", funct
         {code: "3", name: "Table", icon: "fa fa-table", state: "Table"},
 
       
-        {parent: "1", code: "1-0", name: "Tabs", icon: "fa fa-circle-o"},
-        {parent: "1", code: "1-1", name: "Modals", icon: "fa fa-circle-o"},
-        {parent: "1", code: "1-2", name: "Timeline", icon: "fa fa-circle-o"}
+        {parent: "1", code: "1-0", name: "Tabs", icon: "fa fa-circle-o", state: "Tabs"},
+        {parent: "1", code: "1-1", name: "Modals", icon: "fa fa-circle-o", state: "Modals"},
+        {parent: "1", code: "1-2", name: "Timeline", icon: "fa fa-circle-o", state: "TimeLine"},
+        {parent: "1", code: "1-3", name: "General", icon: "fa fa-circle-o", state: "General"}
     ];
 
     var menuMap = {};

@@ -1,8 +1,8 @@
-angular.module('demo').controller('FormCtrl', FormCtrl);
+angular.module('demo').controller('GeneralCtrl', GeneralCtrl);
 
-FormCtrl.$inject = [];
+GeneralCtrl.$inject = [];
 
-function FormCtrl() {
+function GeneralCtrl() {
 
     var vm = this;
 

@@ -6,6 +6,8 @@ function TableCtrl() {
 
     var vm = this;
 
+    ////////////////////// variables bind to view ////////////////////////
+
     vm.formData = {};
 
     vm.pager = {
@@ -15,11 +17,21 @@ function TableCtrl() {
 
     vm.formData.dataList = [];
 
-    for(var i = 0; i < 10; i++){
-        vm.formData.dataList.push({
-            uuid: i,
-            name: 'item' + i
-        })
+    ////////////////////////// inner variables //////////////////////////
+
+    ////////////////////// functions bind to view ////////////////////////
+
+    ////////////////////////// inner functions //////////////////////////
+
+    function init(){
+        for(var i = 0; i < 10; i++){
+            vm.formData.dataList.push({
+                uuid: i,
+                name: 'item' + i
+            })
+        }
     }
+
+    init();
 
 }
